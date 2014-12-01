@@ -9,7 +9,8 @@
 #import "MainTableViewController.h"
 #import "MainTableViewCell.h"
 #import "DUV1000ViewController.h"
-
+#import "Task.h"
+#import "PGZ2ViewController.h"
 @interface MainTableViewController ()
 {
     NSArray* sections;
@@ -20,7 +21,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    sections = @[@"ДУВ1000"];
+    sections = @[
+                 [[Task alloc] initTask:@"ДУВ1000"               WithController:[DUV1000ViewController DUV1000Controller]],
+                 [[Task alloc] initTask:@"ПГЗ"                   WithController:[PGZ2ViewController new]],
+                 [[Task alloc] initTask:@"ОГЗ"                   WithController:[DUV1000ViewController DUV1000Controller]],
+                 [[Task alloc] initTask:@"СН"                    WithController:[DUV1000ViewController DUV1000Controller]],
+                 [[Task alloc] initTask:@"BL <=> XY"             WithController:[DUV1000ViewController DUV1000Controller]],
+                 [[Task alloc] initTask:@"WGS84 <=> CK42"        WithController:[DUV1000ViewController DUV1000Controller]],
+                 [[Task alloc] initTask:@"WGS84 <=> CK42 по GPS" WithController:[DUV1000ViewController DUV1000Controller]],
+                 [[Task alloc] initTask:@"Сближение меридиан"    WithController:[DUV1000ViewController DUV1000Controller]],
+                 [[Task alloc] initTask:@"Короткая база"         WithController:[DUV1000ViewController DUV1000Controller]],
+                 [[Task alloc] initTask:@"Засечки"               WithController:[DUV1000ViewController DUV1000Controller]],
+                 [[Task alloc] initTask:@"Расчёт угла солнца"    WithController:[DUV1000ViewController DUV1000Controller]],
+                 [[Task alloc] initTask:@"Перевод углов"         WithController:[DUV1000ViewController DUV1000Controller]],
+                 [[Task alloc] initTask:@"Помощь"                WithController:[DUV1000ViewController DUV1000Controller]]
+                 ];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,24 +60,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[MainTableViewCell reuseIdentifier] forIndexPath:indexPath];
-    cell.Label.text = sections[indexPath.row];
+    cell.Label.text = ((Task*)sections[indexPath.row]).name;
     return cell;
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger row = indexPath.row;
-    UIViewController* controller = nil;
-    switch (row)
-    {
-        case 0:
-            controller = [DUV1000ViewController DUV1000Controller];
-            break;
-            
-        default:
-            break;
-    }
-    [self.navigationController pushViewController:controller animated:YES];
+    [self.navigationController pushViewController:((Task*)sections[indexPath.row]).controller animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 @end

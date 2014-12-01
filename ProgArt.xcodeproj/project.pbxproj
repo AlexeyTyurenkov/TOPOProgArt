@@ -16,8 +16,15 @@
 		C61DA7AD1A2CA16000BB9210 /* ProgArtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C61DA7AC1A2CA16000BB9210 /* ProgArtTests.m */; };
 		C61DA7B81A2CA1D700BB9210 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61DA7B71A2CA1D700BB9210 /* MainTableViewController.m */; };
 		C61DA7BB1A2CA1FD00BB9210 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C61DA7BA1A2CA1FD00BB9210 /* MainTableViewCell.m */; };
-		C6D717181A2CBB8F00C5EBB2 /* DUV1000ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D717161A2CBB8F00C5EBB2 /* DUV1000ViewController.m */; };
-		C6D717191A2CBB8F00C5EBB2 /* DUV1000ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6D717171A2CBB8F00C5EBB2 /* DUV1000ViewController.xib */; };
+		D9195B871A2D043300EF75BB /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195B861A2D043300EF75BB /* Task.m */; };
+		D9195B8C1A2D043E00EF75BB /* DUV1000ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195B8A1A2D043E00EF75BB /* DUV1000ViewController.m */; };
+		D9195B8D1A2D043E00EF75BB /* DUV1000ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9195B8B1A2D043E00EF75BB /* DUV1000ViewController.xib */; };
+		D9195B991A2D158000EF75BB /* PGZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195B971A2D158000EF75BB /* PGZViewController.m */; };
+		D9195B9A1A2D158000EF75BB /* PGZViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9195B981A2D158000EF75BB /* PGZViewController.xib */; };
+		D9195B9E1A2D160D00EF75BB /* PGZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195B9C1A2D160D00EF75BB /* PGZTableViewCell.m */; };
+		D9195B9F1A2D160D00EF75BB /* PGZTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9195B9D1A2D160D00EF75BB /* PGZTableViewCell.xib */; };
+		D9195BA41A2D1B8900EF75BB /* PGZ2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195BA21A2D1B8900EF75BB /* PGZ2ViewController.m */; };
+		D9195BA51A2D1B8900EF75BB /* PGZ2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9195BA31A2D1B8900EF75BB /* PGZ2ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +55,20 @@
 		C61DA7B71A2CA1D700BB9210 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		C61DA7B91A2CA1FD00BB9210 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
 		C61DA7BA1A2CA1FD00BB9210 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
-		C6D717151A2CBB8F00C5EBB2 /* DUV1000ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUV1000ViewController.h; path = ../../../../Users/oleksii_tiurenkov/ProgArt/ProgArt/Tasks/DUV1000ViewController.h; sourceTree = "<group>"; };
-		C6D717161A2CBB8F00C5EBB2 /* DUV1000ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DUV1000ViewController.m; path = ../../../../Users/oleksii_tiurenkov/ProgArt/ProgArt/Tasks/DUV1000ViewController.m; sourceTree = "<group>"; };
-		C6D717171A2CBB8F00C5EBB2 /* DUV1000ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DUV1000ViewController.xib; path = ../../../../Users/oleksii_tiurenkov/ProgArt/ProgArt/Tasks/DUV1000ViewController.xib; sourceTree = "<group>"; };
+		D9195B851A2D043300EF75BB /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		D9195B861A2D043300EF75BB /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		D9195B891A2D043E00EF75BB /* DUV1000ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUV1000ViewController.h; path = Tasks/DUV1000ViewController.h; sourceTree = "<group>"; };
+		D9195B8A1A2D043E00EF75BB /* DUV1000ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DUV1000ViewController.m; path = Tasks/DUV1000ViewController.m; sourceTree = "<group>"; };
+		D9195B8B1A2D043E00EF75BB /* DUV1000ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DUV1000ViewController.xib; path = Tasks/DUV1000ViewController.xib; sourceTree = "<group>"; };
+		D9195B961A2D158000EF75BB /* PGZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PGZViewController.h; path = Tasks/PGZ/PGZViewController.h; sourceTree = "<group>"; };
+		D9195B971A2D158000EF75BB /* PGZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PGZViewController.m; path = Tasks/PGZ/PGZViewController.m; sourceTree = "<group>"; };
+		D9195B981A2D158000EF75BB /* PGZViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PGZViewController.xib; path = Tasks/PGZ/PGZViewController.xib; sourceTree = "<group>"; };
+		D9195B9B1A2D160D00EF75BB /* PGZTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PGZTableViewCell.h; path = Tasks/PGZ/PGZTableViewCell.h; sourceTree = "<group>"; };
+		D9195B9C1A2D160D00EF75BB /* PGZTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PGZTableViewCell.m; path = Tasks/PGZ/PGZTableViewCell.m; sourceTree = "<group>"; };
+		D9195B9D1A2D160D00EF75BB /* PGZTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PGZTableViewCell.xib; path = Tasks/PGZ/PGZTableViewCell.xib; sourceTree = "<group>"; };
+		D9195BA11A2D1B8900EF75BB /* PGZ2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PGZ2ViewController.h; path = Tasks/PGZ/PGZ2ViewController.h; sourceTree = "<group>"; };
+		D9195BA21A2D1B8900EF75BB /* PGZ2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PGZ2ViewController.m; path = Tasks/PGZ/PGZ2ViewController.m; sourceTree = "<group>"; };
+		D9195BA31A2D1B8900EF75BB /* PGZ2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PGZ2ViewController.xib; path = Tasks/PGZ/PGZ2ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +110,8 @@
 		C61DA78F1A2CA15F00BB9210 /* ProgArt */ = {
 			isa = PBXGroup;
 			children = (
-				C6DA30231A2CB76400801A4B /* Tasks */,
+				D9195B841A2D041100EF75BB /* Models */,
+				C6DA30231A2CB76400801A4B /* TaskControllers */,
 				C61DA7941A2CA15F00BB9210 /* AppDelegate.h */,
 				C61DA7951A2CA15F00BB9210 /* AppDelegate.m */,
 				C61DA7971A2CA15F00BB9210 /* ViewController.h */,
@@ -135,14 +154,48 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C6DA30231A2CB76400801A4B /* Tasks */ = {
+		C6DA30231A2CB76400801A4B /* TaskControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C6D717151A2CBB8F00C5EBB2 /* DUV1000ViewController.h */,
-				C6D717161A2CBB8F00C5EBB2 /* DUV1000ViewController.m */,
-				C6D717171A2CBB8F00C5EBB2 /* DUV1000ViewController.xib */,
+				D9195BA01A2D1B5C00EF75BB /* PGZ2 */,
+				D9195B8E1A2D10F400EF75BB /* PGZ */,
+				D9195B891A2D043E00EF75BB /* DUV1000ViewController.h */,
+				D9195B8A1A2D043E00EF75BB /* DUV1000ViewController.m */,
+				D9195B8B1A2D043E00EF75BB /* DUV1000ViewController.xib */,
 			);
-			name = Tasks;
+			name = TaskControllers;
+			sourceTree = "<group>";
+		};
+		D9195B841A2D041100EF75BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9195B851A2D043300EF75BB /* Task.h */,
+				D9195B861A2D043300EF75BB /* Task.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D9195B8E1A2D10F400EF75BB /* PGZ */ = {
+			isa = PBXGroup;
+			children = (
+				D9195B961A2D158000EF75BB /* PGZViewController.h */,
+				D9195B971A2D158000EF75BB /* PGZViewController.m */,
+				D9195B981A2D158000EF75BB /* PGZViewController.xib */,
+				D9195B9B1A2D160D00EF75BB /* PGZTableViewCell.h */,
+				D9195B9C1A2D160D00EF75BB /* PGZTableViewCell.m */,
+				D9195B9D1A2D160D00EF75BB /* PGZTableViewCell.xib */,
+			);
+			name = PGZ;
+			sourceTree = "<group>";
+		};
+		D9195BA01A2D1B5C00EF75BB /* PGZ2 */ = {
+			isa = PBXGroup;
+			children = (
+				D9195BA11A2D1B8900EF75BB /* PGZ2ViewController.h */,
+				D9195BA21A2D1B8900EF75BB /* PGZ2ViewController.m */,
+				D9195BA31A2D1B8900EF75BB /* PGZ2ViewController.xib */,
+			);
+			name = PGZ2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C61DA79C1A2CA15F00BB9210 /* Main.storyboard in Resources */,
-				C6D717191A2CBB8F00C5EBB2 /* DUV1000ViewController.xib in Resources */,
+				D9195B8D1A2D043E00EF75BB /* DUV1000ViewController.xib in Resources */,
 				C61DA7A11A2CA15F00BB9210 /* LaunchScreen.xib in Resources */,
+				D9195BA51A2D1B8900EF75BB /* PGZ2ViewController.xib in Resources */,
+				D9195B9F1A2D160D00EF75BB /* PGZTableViewCell.xib in Resources */,
+				D9195B9A1A2D158000EF75BB /* PGZViewController.xib in Resources */,
 				C61DA79E1A2CA15F00BB9210 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,11 +303,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C61DA7B81A2CA1D700BB9210 /* MainTableViewController.m in Sources */,
+				D9195B9E1A2D160D00EF75BB /* PGZTableViewCell.m in Sources */,
 				C61DA7991A2CA15F00BB9210 /* ViewController.m in Sources */,
+				D9195BA41A2D1B8900EF75BB /* PGZ2ViewController.m in Sources */,
 				C61DA7961A2CA15F00BB9210 /* AppDelegate.m in Sources */,
-				C6D717181A2CBB8F00C5EBB2 /* DUV1000ViewController.m in Sources */,
 				C61DA7931A2CA15F00BB9210 /* main.m in Sources */,
+				D9195B871A2D043300EF75BB /* Task.m in Sources */,
 				C61DA7BB1A2CA1FD00BB9210 /* MainTableViewCell.m in Sources */,
+				D9195B991A2D158000EF75BB /* PGZViewController.m in Sources */,
+				D9195B8C1A2D043E00EF75BB /* DUV1000ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

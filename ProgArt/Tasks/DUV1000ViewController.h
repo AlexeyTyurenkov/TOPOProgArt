@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DUV1000ViewController : UIViewController
+@interface DUV1000ViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 @property (weak, nonatomic) IBOutlet UITextField *distanceTextField;
 @property (weak, nonatomic) IBOutlet UITextField *angleTextField;
@@ -16,6 +16,7 @@
 - (IBAction)calculateDistance:(UIButton *)sender;
 - (IBAction)calculateAngle:(id)sender;
 - (IBAction)calculateHeight:(id)sender;
+- (IBAction)tap:(UITapGestureRecognizer *)sender;
 
 + (UIViewController*)DUV1000Controller;
 

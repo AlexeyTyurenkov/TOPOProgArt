@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,14 +40,14 @@
     float angle = [self.angleTextField.text floatValue];
     if (angle == 0.0f)
     {
-        NSLog(@"Error");
+         [self errorHandling:self.angleTextField];
     }
     else
     {
         float height = [self.hieghtTextField.text floatValue];
         if (height == 0.0f)
         {
-            NSLog(@"Error");
+            [self errorHandling:self.hieghtTextField];
         }
         else
         {
@@ -53,6 +55,7 @@
             self.answerLabel.text = [NSString stringWithFormat:@"Расстояние = %1.4f",distance];
         }
     }
+    [self tap:nil];
 }
 
 - (IBAction)calculateAngle:(id)sender
@@ -60,14 +63,14 @@
     float height = [self.hieghtTextField.text floatValue];
     if (height == 0.0f)
     {
-        NSLog(@"Error");
+        [self errorHandling:self.hieghtTextField];
     }
     else
     {
         float distance = [self.distanceTextField.text floatValue];
         if (distance == 0.0f)
         {
-            NSLog(@"Error");
+            [self errorHandling:self.distanceTextField];
         }
         else
         {
@@ -75,6 +78,8 @@
             self.answerLabel.text = [NSString stringWithFormat:@"Угол  = %1.4f",angle];
         }
     }
+    [self tap:nil];
+
 }
 
 - (IBAction)calculateHeight:(id)sender
@@ -82,14 +87,14 @@
     float angle = [self.angleTextField.text floatValue];
     if (angle == 0.0f)
     {
-        NSLog(@"Error");
+         [self errorHandling:self.angleTextField];
     }
     else
     {
         float distance = [self.distanceTextField.text floatValue];
         if (distance == 0.0f)
         {
-            NSLog(@"Error");
+            [self errorHandling:self.distanceTextField];
         }
         else
         {
@@ -97,7 +102,26 @@
             self.answerLabel.text = [NSString stringWithFormat:@"Высота = %1.4f",height];
         }
     }
+    [self tap:nil];
+}
 
+- (IBAction)tap:(UITapGestureRecognizer *)sender
+{
+    [self.angleTextField resignFirstResponder];
+    [self.hieghtTextField resignFirstResponder];
+    [self.distanceTextField resignFirstResponder];
+}
+
+
+- (void) errorHandling:(UITextField*)textField
+{
+    textField.backgroundColor = [UIColor redColor];
+
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    textField.backgroundColor = [UIColor whiteColor];
 }
 
 + (UIViewController *)DUV1000Controller
@@ -105,4 +129,6 @@
     UIViewController* result = [[DUV1000ViewController  alloc] init];
     return result;
 }
+
+
 @end
