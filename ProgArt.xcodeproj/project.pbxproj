@@ -17,6 +17,8 @@
 		C61DA7B81A2CA1D700BB9210 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61DA7B71A2CA1D700BB9210 /* MainTableViewController.m */; };
 		C61DA7BB1A2CA1FD00BB9210 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C61DA7BA1A2CA1FD00BB9210 /* MainTableViewCell.m */; };
 		C62212521A2DE40500C47D0C /* VibroUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C62212511A2DE40500C47D0C /* VibroUtil.m */; };
+		C62212561A2E121800C47D0C /* OGZ2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62212541A2E121800C47D0C /* OGZ2ViewController.m */; };
+		C62212571A2E121800C47D0C /* OGZ2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62212551A2E121800C47D0C /* OGZ2ViewController.xib */; };
 		D9195B871A2D043300EF75BB /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195B861A2D043300EF75BB /* Task.m */; };
 		D9195B8C1A2D043E00EF75BB /* DUV1000ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195B8A1A2D043E00EF75BB /* DUV1000ViewController.m */; };
 		D9195B8D1A2D043E00EF75BB /* DUV1000ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9195B8B1A2D043E00EF75BB /* DUV1000ViewController.xib */; };
@@ -54,6 +56,9 @@
 		C61DA7BA1A2CA1FD00BB9210 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		C62212501A2DE40400C47D0C /* VibroUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VibroUtil.h; path = ../../../../Users/oleksii_tiurenkov/TOPOProgArt/ProgArt/VibroUtil.h; sourceTree = "<group>"; };
 		C62212511A2DE40500C47D0C /* VibroUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VibroUtil.m; path = ../../../../Users/oleksii_tiurenkov/TOPOProgArt/ProgArt/VibroUtil.m; sourceTree = "<group>"; };
+		C62212531A2E121800C47D0C /* OGZ2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGZ2ViewController.h; sourceTree = "<group>"; };
+		C62212541A2E121800C47D0C /* OGZ2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGZ2ViewController.m; sourceTree = "<group>"; };
+		C62212551A2E121800C47D0C /* OGZ2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGZ2ViewController.xib; sourceTree = "<group>"; };
 		D9195B851A2D043300EF75BB /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		D9195B861A2D043300EF75BB /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		D9195B891A2D043E00EF75BB /* DUV1000ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUV1000ViewController.h; path = Tasks/DUV1000ViewController.h; sourceTree = "<group>"; };
@@ -149,9 +154,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C62212581A2E122800C47D0C /* OGZ */ = {
+			isa = PBXGroup;
+			children = (
+				C62212531A2E121800C47D0C /* OGZ2ViewController.h */,
+				C62212541A2E121800C47D0C /* OGZ2ViewController.m */,
+				C62212551A2E121800C47D0C /* OGZ2ViewController.xib */,
+			);
+			name = OGZ;
+			sourceTree = "<group>";
+		};
 		C6DA30231A2CB76400801A4B /* TaskControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C62212581A2E122800C47D0C /* OGZ */,
 				D9195BA01A2D1B5C00EF75BB /* PGZ2 */,
 				D9195B891A2D043E00EF75BB /* DUV1000ViewController.h */,
 				D9195B8A1A2D043E00EF75BB /* DUV1000ViewController.m */,
@@ -261,6 +277,7 @@
 			files = (
 				C61DA79C1A2CA15F00BB9210 /* Main.storyboard in Resources */,
 				D9195B8D1A2D043E00EF75BB /* DUV1000ViewController.xib in Resources */,
+				C62212571A2E121800C47D0C /* OGZ2ViewController.xib in Resources */,
 				C61DA7A11A2CA15F00BB9210 /* LaunchScreen.xib in Resources */,
 				D9195BA51A2D1B8900EF75BB /* PGZ2ViewController.xib in Resources */,
 				C61DA79E1A2CA15F00BB9210 /* Images.xcassets in Resources */,
@@ -289,6 +306,7 @@
 				D9195B871A2D043300EF75BB /* Task.m in Sources */,
 				C62212521A2DE40500C47D0C /* VibroUtil.m in Sources */,
 				C61DA7BB1A2CA1FD00BB9210 /* MainTableViewCell.m in Sources */,
+				C62212561A2E121800C47D0C /* OGZ2ViewController.m in Sources */,
 				D9195B8C1A2D043E00EF75BB /* DUV1000ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,8 @@
 #import "DUV1000ViewController.h"
 #import "Task.h"
 #import "PGZ2ViewController.h"
+#import "OGZ2ViewController.h"
+
 @interface MainTableViewController ()
 {
     NSArray* sections;
@@ -24,7 +26,7 @@
     sections = @[
                  [[Task alloc] initTask:@"ДУВ1000"               WithController:[DUV1000ViewController DUV1000Controller]],
                  [[Task alloc] initTask:@"ПГЗ"                   WithController:[PGZ2ViewController new]],
-                 [[Task alloc] initTask:@"ОГЗ"                   WithController:[DUV1000ViewController DUV1000Controller]],
+                 [[Task alloc] initTask:@"ОГЗ"                   WithController:[OGZ2ViewController new]],
                  [[Task alloc] initTask:@"СН"                    WithController:[DUV1000ViewController DUV1000Controller]],
                  [[Task alloc] initTask:@"BL <=> XY"             WithController:[DUV1000ViewController DUV1000Controller]],
                  [[Task alloc] initTask:@"WGS84 <=> CK42"        WithController:[DUV1000ViewController DUV1000Controller]],
