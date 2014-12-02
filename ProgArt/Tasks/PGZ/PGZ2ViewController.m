@@ -36,8 +36,8 @@
     double Mz_pgz = [self.Mc.text doubleValue];
     
     
-    double xn_pgz = xknp_pgz+cos(a_pgz/(30/3.14159))*d_pgz;
-    double yn_pgz = yknp_pgz+sin(a_pgz/(30/3.14159))*d_pgz;
+    double xn_pgz = xknp_pgz+cos(a_pgz/(30/M_PI))*d_pgz;
+    double yn_pgz = yknp_pgz+sin(a_pgz/(30/M_PI))*d_pgz;
     double hn_pgz= hknp_pgz+(((d_pgz*Mz_pgz/1000)*1.05)*100);
     
     self.labelHResult.text = [NSString stringWithFormat:@"%1.2f",hn_pgz];
