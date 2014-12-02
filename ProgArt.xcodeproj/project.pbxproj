@@ -16,6 +16,7 @@
 		C61DA7AD1A2CA16000BB9210 /* ProgArtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C61DA7AC1A2CA16000BB9210 /* ProgArtTests.m */; };
 		C61DA7B81A2CA1D700BB9210 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61DA7B71A2CA1D700BB9210 /* MainTableViewController.m */; };
 		C61DA7BB1A2CA1FD00BB9210 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C61DA7BA1A2CA1FD00BB9210 /* MainTableViewCell.m */; };
+		C62212521A2DE40500C47D0C /* VibroUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C62212511A2DE40500C47D0C /* VibroUtil.m */; };
 		D9195B871A2D043300EF75BB /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195B861A2D043300EF75BB /* Task.m */; };
 		D9195B8C1A2D043E00EF75BB /* DUV1000ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195B8A1A2D043E00EF75BB /* DUV1000ViewController.m */; };
 		D9195B8D1A2D043E00EF75BB /* DUV1000ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9195B8B1A2D043E00EF75BB /* DUV1000ViewController.xib */; };
@@ -55,6 +56,8 @@
 		C61DA7B71A2CA1D700BB9210 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		C61DA7B91A2CA1FD00BB9210 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
 		C61DA7BA1A2CA1FD00BB9210 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		C62212501A2DE40400C47D0C /* VibroUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VibroUtil.h; path = ../../../../Users/oleksii_tiurenkov/TOPOProgArt/ProgArt/VibroUtil.h; sourceTree = "<group>"; };
+		C62212511A2DE40500C47D0C /* VibroUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VibroUtil.m; path = ../../../../Users/oleksii_tiurenkov/TOPOProgArt/ProgArt/VibroUtil.m; sourceTree = "<group>"; };
 		D9195B851A2D043300EF75BB /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		D9195B861A2D043300EF75BB /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		D9195B891A2D043E00EF75BB /* DUV1000ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUV1000ViewController.h; path = Tasks/DUV1000ViewController.h; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				C61DA7B71A2CA1D700BB9210 /* MainTableViewController.m */,
 				C61DA7B91A2CA1FD00BB9210 /* MainTableViewCell.h */,
 				C61DA7BA1A2CA1FD00BB9210 /* MainTableViewCell.m */,
+				C62212501A2DE40400C47D0C /* VibroUtil.h */,
+				C62212511A2DE40500C47D0C /* VibroUtil.m */,
 			);
 			path = ProgArt;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				C61DA7961A2CA15F00BB9210 /* AppDelegate.m in Sources */,
 				C61DA7931A2CA15F00BB9210 /* main.m in Sources */,
 				D9195B871A2D043300EF75BB /* Task.m in Sources */,
+				C62212521A2DE40500C47D0C /* VibroUtil.m in Sources */,
 				C61DA7BB1A2CA1FD00BB9210 /* MainTableViewCell.m in Sources */,
 				D9195B991A2D158000EF75BB /* PGZViewController.m in Sources */,
 				D9195B8C1A2D043E00EF75BB /* DUV1000ViewController.m in Sources */,

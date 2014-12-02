@@ -37,6 +37,7 @@
 */
 - (IBAction)calculateDistance:(UIButton *)sender
 {
+    [VibroUtil vibrate];
     float angle = [self.angleTextField.text floatValue];
     if (angle == 0.0f)
     {
@@ -60,6 +61,7 @@
 
 - (IBAction)calculateAngle:(id)sender
 {
+    [VibroUtil vibrate];
     float height = [self.hieghtTextField.text floatValue];
     if (height == 0.0f)
     {
@@ -84,6 +86,7 @@
 
 - (IBAction)calculateHeight:(id)sender
 {
+    [VibroUtil vibrate];
     float angle = [self.angleTextField.text floatValue];
     if (angle == 0.0f)
     {
