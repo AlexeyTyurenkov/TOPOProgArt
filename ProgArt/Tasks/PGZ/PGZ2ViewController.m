@@ -29,12 +29,41 @@
 {
     [self tap:nil];
     double xknp_pgz = [self.Xknp.text doubleValue];
+    if (xknp_pgz == 0.0f)
+    {
+        [self errorHandling:self.Xknp];
+        return;
+    }
     double yknp_pgz = [self.YKnp.text doubleValue];
+    if (yknp_pgz == 0.0f)
+    {
+        [self errorHandling:self.YKnp];
+        return;
+    }
     double hknp_pgz = [self.hKnp.text doubleValue];
+    if (hknp_pgz == 0.0f)
+    {
+        [self errorHandling:self.hKnp];
+        return;
+    }
     double a_pgz = [self.AKnp.text doubleValue];
+    if (a_pgz == 0.0f)
+    {
+        [self errorHandling:self.AKnp];
+        return;
+    }
     double d_pgz = [self.Dknp.text doubleValue];
+    if (d_pgz == 0.0f)
+    {
+        [self errorHandling:self.Dknp];
+        return;
+    }
     double Mz_pgz = [self.Mc.text doubleValue];
-    
+    if (Mz_pgz == 0.0f)
+    {
+        [self errorHandling:self.Mc];
+        return;
+    }
     
     double xn_pgz = xknp_pgz+cos(a_pgz/(30/M_PI))*d_pgz;
     double yn_pgz = yknp_pgz+sin(a_pgz/(30/M_PI))*d_pgz;
@@ -118,7 +147,7 @@
 - (void) errorHandling:(UITextField*)textField
 {
     textField.backgroundColor = [UIColor redColor];
-    
+    [scrollView scrollRectToVisible:textField.superview.frame animated:YES];
 }
 
 @end
