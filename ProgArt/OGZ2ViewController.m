@@ -8,7 +8,7 @@
 
 #import "OGZ2ViewController.h"
 #import "VibroUtil.h"
-
+#import "HelpViewController.h"
 @interface OGZ2ViewController ()
 {
     UITextField* activeField;
@@ -97,6 +97,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    [self addHelpButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -167,5 +168,20 @@
     textField.backgroundColor = [UIColor redColor];
     [scrollView scrollRectToVisible:textField.superview.frame animated:YES];
 }
+#pragma mark - Help Screen
+- (void) addHelpButton
+{
+    UIBarButtonItem* helpItem = [[UIBarButtonItem alloc] initWithTitle:@"HELP" style:UIBarButtonItemStylePlain  target:self action:@selector(openHelpController)];
+    self.navigationItem.rightBarButtonItem = helpItem;
+}
 
+- (void) openHelpController
+{
+    HelpViewController* helpController = [HelpViewController new];
+    helpController.mainImagePNG = [UIImage imageNamed:@"puc_ogz"];
+    helpController.text         = @"Подпрограмма предназначена для расчёта полярных координат ориентира (цели).\n \
+    Для проведения расчётов введите координаты Х,У,h точки стояния (КНП, НП, КТ и т.д.), а также Х,У ориентира (цели, КТ).\n \
+    Далее нажмите кнопку «Решить» и в нижней части экрана видим ответ.";
+    [self.navigationController pushViewController:helpController animated:YES];
+}
 @end

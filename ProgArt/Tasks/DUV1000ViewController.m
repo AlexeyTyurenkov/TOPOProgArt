@@ -7,6 +7,7 @@
 //
 
 #import "DUV1000ViewController.h"
+#import "HelpViewController.h"
 
 @interface DUV1000ViewController ()
 
@@ -18,6 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    [self addHelpButton];
     
 }
 
@@ -132,6 +134,22 @@
     UIViewController* result = [[DUV1000ViewController  alloc] init];
     return result;
 }
+#pragma mark - Help Screens
+- (void) addHelpButton
+{
+    UIBarButtonItem* helpItem = [[UIBarButtonItem alloc] initWithTitle:@"HELP" style:UIBarButtonItemStylePlain  target:self action:@selector(openHelpController)];
+    self.navigationItem.rightBarButtonItem = helpItem;
+}
 
-
+- (void) openHelpController
+{
+    HelpViewController* helpController = [HelpViewController new];
+    helpController.mainImagePNG = [UIImage imageNamed:@"puc_ogz"];
+    helpController.text         = @"Подпрограмма предназначена для расчёта дальности, угла и высоты ориентира (цели).\n \
+    Для проведения расчётов введите две известные величина из трёх и нажмите кнопку с названием той величины которую необходимо вычислить.\n \
+    Например: необходимо найти Угол, вводим дальность до ориентира и высоту в соответствующие ячейки. \n \
+    Далее нажимаем кнопку «Угол» и в нижней части экрана видим ответ.\n \
+    ВНИМАНИЕ при вводе угла использовать точку ( если угол 0-15, то 0.15).";
+    [self.navigationController pushViewController:helpController animated:YES];
+}
 @end

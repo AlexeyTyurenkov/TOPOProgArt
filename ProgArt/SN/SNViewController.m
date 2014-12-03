@@ -8,6 +8,7 @@
 
 #import "SNViewController.h"
 #import "VibroUtil.h"
+#import "HelpViewController.h"
 
 @interface SNViewController ()
 {
@@ -72,9 +73,9 @@
     double yop_sn = (xop_sn-xlev_sn)*tan(alev_z_sn*Kp)+ylev_sn;
     
     
-    self.Aknpz.text = [NSString stringWithFormat:@"%1.2f",A_ogz];
-    self.Dknpz.text = [NSString stringWithFormat:@"%1.2f",D_ogz];
-    self.Mz.text = [NSString stringWithFormat:@"%1.2f",Mz_ogz];
+//    self.Aknpz.text = [NSString stringWithFormat:@"%1.2f",A_ogz];
+//    self.Dknpz.text = [NSString stringWithFormat:@"%1.2f",D_ogz];
+//    self.Mz.text = [NSString stringWithFormat:@"%1.2f",Mz_ogz];
     [scrollView scrollRectToVisible:self.decisionView.frame animated:YES];
 }
 
@@ -83,6 +84,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    [self addHelpButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -153,5 +155,21 @@
     textField.backgroundColor = [UIColor redColor];
     [scrollView scrollRectToVisible:textField.superview.frame animated:YES];
 }
+#pragma mark - Help Screens
+- (void) addHelpButton
+{
+    UIBarButtonItem* helpItem = [[UIBarButtonItem alloc] initWithTitle:@"HELP" style:UIBarButtonItemStylePlain  target:self action:@selector(openHelpController)];
+    self.navigationItem.rightBarButtonItem = helpItem;
+}
 
+- (void) openHelpController
+{
+    HelpViewController* helpController = [HelpViewController new];
+    helpController.mainImagePNG = [UIImage imageNamed:@"puc_sn"];
+    helpController.text         = @"Подпрограмма предназначена для расчёта полярных координат ориентира (цели).\n \
+    Для проведения расчётов введите координаты Х,У правого и левого пункта  (КНП, НП, КТ и т.д.), а также дирекционные углы на ориентира (цели, КТ) с правого и левого пункта.\n \
+    Далее нажмите кнопку «Решить» и в нижней части экрана видим ответ.\n \
+    ВНИМАНИЕ при вводе дирекционного угла ИСПОЛЬЗЫВАТЬ точку. Например, угол 12-80, то вводим 12.80.";
+    [self.navigationController pushViewController:helpController animated:YES];
+}
 @end

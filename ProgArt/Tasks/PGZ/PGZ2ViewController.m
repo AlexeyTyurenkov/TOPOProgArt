@@ -8,6 +8,7 @@
 
 #import "PGZ2ViewController.h"
 #import "VibroUtil.h"
+#import "HelpViewController.h"
 
 @interface PGZ2ViewController ()
 {
@@ -81,6 +82,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    [self addHelpButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -151,5 +153,22 @@
     textField.backgroundColor = [UIColor redColor];
     [scrollView scrollRectToVisible:textField.superview.frame animated:YES];
 }
+#pragma mark - Help Screen
+- (void) addHelpButton
+{
+    UIBarButtonItem* helpItem = [[UIBarButtonItem alloc] initWithTitle:@"HELP" style:UIBarButtonItemStylePlain  target:self action:@selector(openHelpController)];
+    self.navigationItem.rightBarButtonItem = helpItem;
+}
 
+- (void) openHelpController
+{
+    HelpViewController* helpController = [HelpViewController new];
+    helpController.mainImagePNG = [UIImage imageNamed:@"puc_pgz"];
+    helpController.text         = @"Прямой геодезической задачей на плоскости называется способ определения координат точки по известным прямоугольным координатам заданой (исходной) точки на определяемую.\n \
+    Подпрограмма предназначена для расчёта прямоугольных координат ориентира (цели).\n \
+    Для проведения расчётов введите координаты Х,У,h точки стояния (КНП, НП, КТ и т.д.), а также дальность и дирекционный угол до ориентира (цели).\n \
+    Далее нажмите кнопку «Решить» и в нижней части экрана видим ответ.\n \
+    ВНИМАНИЕ при вводе дирекционного угла ИСПОЛЬЗЫВАТЬ точку. Например, угол 12-80, то вводим 12.80.";
+    [self.navigationController pushViewController:helpController animated:YES];
+}
 @end
