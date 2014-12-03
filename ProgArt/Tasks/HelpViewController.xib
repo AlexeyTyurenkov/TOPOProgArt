@@ -41,7 +41,7 @@
                         <constraint firstAttribute="trailing" secondItem="DGB-PB-hUY" secondAttribute="trailing" priority="999" constant="5" id="BsW-HY-Jcl"/>
                         <constraint firstAttribute="bottom" secondItem="DGB-PB-hUY" secondAttribute="bottom" id="aNh-EJ-MrQ"/>
                         <constraint firstAttribute="centerX" secondItem="JJE-NP-ctU" secondAttribute="centerX" id="eAs-2a-C89"/>
-                        <constraint firstItem="DGB-PB-hUY" firstAttribute="width" relation="lessThanOrEqual" secondItem="cXZ-Bs-pXr" secondAttribute="width" priority="998" id="zrs-us-LC8"/>
+                        <constraint firstItem="DGB-PB-hUY" firstAttribute="width" relation="lessThanOrEqual" secondItem="cXZ-Bs-pXr" secondAttribute="width" priority="998" constant="5" id="zrs-us-LC8"/>
                     </constraints>
                 </scrollView>
             </subviews>

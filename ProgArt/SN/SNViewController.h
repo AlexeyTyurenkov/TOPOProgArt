@@ -21,6 +21,12 @@
 @property (weak, nonatomic) IBOutlet UITextField *APrav;
 
 
+@property (weak, nonatomic) IBOutlet UILabel *Xzelu;
+@property (weak, nonatomic) IBOutlet UILabel *Yzelu;
+@property (weak, nonatomic) IBOutlet UILabel *dlz;
+@property (weak, nonatomic) IBOutlet UILabel *dpc;
+@property (weak, nonatomic) IBOutlet UILabel *base;
+
 
 
 

@@ -71,11 +71,24 @@
     double Kp=(6 * M_PI / 180);
     double xop_sn = ((xlev_sn*tan(alev_z_sn*Kp)-ylev_sn)-(xprav_sn*tan(aprav_z_sn*Kp)-yprav_sn))/(tan(alev_z_sn*Kp)-tan(aprav_z_sn*Kp));
     double yop_sn = (xop_sn-xlev_sn)*tan(alev_z_sn*Kp)+ylev_sn;
+    self.Xzelu.text = [NSString stringWithFormat:@"1.2%f",xop_sn];
+    self.Yzelu.text = [NSString stringWithFormat:@"1.2%f",yop_sn];
     
+    double dx_l= (xop_sn-xlev_sn);
+    double dy_l= (yop_sn-ylev_sn);
+    double D_l_z= sqrt(dx_l*dx_l+dy_l*dy_l);
+    self.dlz.text = [NSString stringWithFormat:@"1.2%f",D_l_z];
     
-//    self.Aknpz.text = [NSString stringWithFormat:@"%1.2f",A_ogz];
-//    self.Dknpz.text = [NSString stringWithFormat:@"%1.2f",D_ogz];
-//    self.Mz.text = [NSString stringWithFormat:@"%1.2f",Mz_ogz];
+    double dx_pr=(xop_sn-xprav_sn);
+    double dy_pr= (yop_sn-yprav_sn);
+    double D_pr_z= sqrt(dx_pr*dx_pr+dy_pr*dy_pr);
+    self.dpc.text = [NSString stringWithFormat:@"1.2%f",D_pr_z];
+    
+    double dx_b= (xlev_sn-xprav_sn);
+    double dy_b= (ylev_sn-yprav_sn);
+    double baza= sqrt(dx_b*dx_b+dy_b*dy_b);
+    self.base.text = [NSString stringWithFormat:@"1.2%f",baza];
+	
     [scrollView scrollRectToVisible:self.decisionView.frame animated:YES];
 }
 

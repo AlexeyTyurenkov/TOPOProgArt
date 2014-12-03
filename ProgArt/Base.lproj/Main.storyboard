@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--ТОПО-->
         <scene sceneID="oWi-GU-NGh">
             <objects>
                 <tableViewController id="AMp-qM-WvD" customClass="MainTableViewController" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                         </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="WQI-lp-FtF"/>
+                    <navigationItem key="navigationItem" title="ТОПО" id="WQI-lp-FtF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXY-XC-ygz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
