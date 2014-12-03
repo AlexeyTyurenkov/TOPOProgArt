@@ -19,6 +19,8 @@
 		C62212521A2DE40500C47D0C /* VibroUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C62212511A2DE40500C47D0C /* VibroUtil.m */; };
 		C62212561A2E121800C47D0C /* OGZ2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62212541A2E121800C47D0C /* OGZ2ViewController.m */; };
 		C62212571A2E121800C47D0C /* OGZ2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62212551A2E121800C47D0C /* OGZ2ViewController.xib */; };
+		C622125F1A2F305A00C47D0C /* SNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C622125D1A2F305A00C47D0C /* SNViewController.m */; };
+		C62212601A2F305A00C47D0C /* SNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C622125E1A2F305A00C47D0C /* SNViewController.xib */; };
 		D9195B871A2D043300EF75BB /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195B861A2D043300EF75BB /* Task.m */; };
 		D9195B8C1A2D043E00EF75BB /* DUV1000ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195B8A1A2D043E00EF75BB /* DUV1000ViewController.m */; };
 		D9195B8D1A2D043E00EF75BB /* DUV1000ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9195B8B1A2D043E00EF75BB /* DUV1000ViewController.xib */; };
@@ -59,6 +61,9 @@
 		C62212531A2E121800C47D0C /* OGZ2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGZ2ViewController.h; sourceTree = "<group>"; };
 		C62212541A2E121800C47D0C /* OGZ2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGZ2ViewController.m; sourceTree = "<group>"; };
 		C62212551A2E121800C47D0C /* OGZ2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGZ2ViewController.xib; sourceTree = "<group>"; };
+		C622125C1A2F305A00C47D0C /* SNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNViewController.h; sourceTree = "<group>"; };
+		C622125D1A2F305A00C47D0C /* SNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNViewController.m; sourceTree = "<group>"; };
+		C622125E1A2F305A00C47D0C /* SNViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNViewController.xib; sourceTree = "<group>"; };
 		D9195B851A2D043300EF75BB /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		D9195B861A2D043300EF75BB /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		D9195B891A2D043E00EF75BB /* DUV1000ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DUV1000ViewController.h; path = Tasks/DUV1000ViewController.h; sourceTree = "<group>"; };
@@ -164,9 +169,20 @@
 			name = OGZ;
 			sourceTree = "<group>";
 		};
+		C622125B1A2F305A00C47D0C /* SN */ = {
+			isa = PBXGroup;
+			children = (
+				C622125C1A2F305A00C47D0C /* SNViewController.h */,
+				C622125D1A2F305A00C47D0C /* SNViewController.m */,
+				C622125E1A2F305A00C47D0C /* SNViewController.xib */,
+			);
+			path = SN;
+			sourceTree = "<group>";
+		};
 		C6DA30231A2CB76400801A4B /* TaskControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C622125B1A2F305A00C47D0C /* SN */,
 				C62212581A2E122800C47D0C /* OGZ */,
 				D9195BA01A2D1B5C00EF75BB /* PGZ2 */,
 				D9195B891A2D043E00EF75BB /* DUV1000ViewController.h */,
@@ -279,6 +295,7 @@
 				D9195B8D1A2D043E00EF75BB /* DUV1000ViewController.xib in Resources */,
 				C62212571A2E121800C47D0C /* OGZ2ViewController.xib in Resources */,
 				C61DA7A11A2CA15F00BB9210 /* LaunchScreen.xib in Resources */,
+				C62212601A2F305A00C47D0C /* SNViewController.xib in Resources */,
 				D9195BA51A2D1B8900EF75BB /* PGZ2ViewController.xib in Resources */,
 				C61DA79E1A2CA15F00BB9210 /* Images.xcassets in Resources */,
 			);
@@ -299,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C61DA7B81A2CA1D700BB9210 /* MainTableViewController.m in Sources */,
+				C622125F1A2F305A00C47D0C /* SNViewController.m in Sources */,
 				C61DA7991A2CA15F00BB9210 /* ViewController.m in Sources */,
 				D9195BA41A2D1B8900EF75BB /* PGZ2ViewController.m in Sources */,
 				C61DA7961A2CA15F00BB9210 /* AppDelegate.m in Sources */,
