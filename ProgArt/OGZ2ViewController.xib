@@ -7,16 +7,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OGZ2ViewController">
             <connections>
-                <outlet property="AKnp" destination="45l-fU-zUn" id="ygy-K0-EvO"/>
-                <outlet property="Dknp" destination="WXj-Pi-bUk" id="rZJ-qi-vTX"/>
-                <outlet property="Mc" destination="WOH-Vb-71f" id="kfm-Q7-O5U"/>
+                <outlet property="Aknpz" destination="4tk-uQ-RoF" id="Bja-8v-M8u"/>
+                <outlet property="Dknpz" destination="5EI-hR-GhF" id="z2L-fb-Blk"/>
+                <outlet property="Mz" destination="4uk-Cp-xhw" id="4B3-T9-vGQ"/>
                 <outlet property="Xknp" destination="WjD-Gp-m17" id="z1G-Ib-hGH"/>
+                <outlet property="Xzelu" destination="45l-fU-zUn" id="aZ5-Yw-sYv"/>
                 <outlet property="YKnp" destination="G4j-Fx-6hZ" id="I3r-cX-y51"/>
+                <outlet property="Yzelu" destination="WXj-Pi-bUk" id="K9N-wS-227"/>
                 <outlet property="decisionView" destination="BIV-7O-CbD" id="t1m-Pg-BgS"/>
                 <outlet property="hKnp" destination="4eB-ao-63u" id="o07-cm-rr4"/>
-                <outlet property="labelHResult" destination="4uk-Cp-xhw" id="QAn-4S-r3W"/>
-                <outlet property="labelXResult" destination="4tk-uQ-RoF" id="o1C-wE-Dpa"/>
-                <outlet property="labelYResult" destination="5EI-hR-GhF" id="fFZ-uN-Lhs"/>
+                <outlet property="hzelu" destination="WOH-Vb-71f" id="183-LO-Kzp"/>
                 <outlet property="scrollView" destination="O0K-nb-Zf9" id="Vnm-wj-fh4"/>
                 <outlet property="view" destination="xfn-LP-czj" id="74X-If-glU"/>
             </connections>
@@ -139,7 +139,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="On6-dd-r3n">
                             <rect key="frame" x="0.0" y="132" width="600" height="44"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="А кнп-ц" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHe-Ic-6Pf">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X цели" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHe-Ic-6Pf">
                                     <rect key="frame" x="17" y="11" width="147" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="147" id="zBA-c7-Xih"/>
@@ -173,7 +173,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wS-LE-chw">
                             <rect key="frame" x="0.0" y="176" width="600" height="44"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Д кнп-ц" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTc-nI-WMs">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y цели" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTc-nI-WMs">
                                     <rect key="frame" x="17" y="11" width="147" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="147" id="wo9-B4-tUm"/>
@@ -207,7 +207,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xe-Yj-sM1">
                             <rect key="frame" x="0.0" y="220" width="600" height="44"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мц" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIC-EZ-blu">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="h цели" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIC-EZ-blu">
                                     <rect key="frame" x="17" y="11" width="147" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="147" id="ImB-57-qpR"/>
@@ -253,7 +253,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BIV-7O-CbD">
                             <rect key="frame" x="0.0" y="308" width="600" height="292"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X цели" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRB-hZ-Kdu">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="А кнп-ц" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRB-hZ-Kdu">
                                     <rect key="frame" x="36" y="31" width="80" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="naD-q4-MEV"/>
@@ -262,7 +262,7 @@
                                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="h цели" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogI-gT-wc6">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мц" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogI-gT-wc6">
                                     <rect key="frame" x="36" y="114" width="80" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -291,7 +291,7 @@
                                         </mask>
                                     </variation>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y цели" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43w-cx-IA7">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Д кнп-ц" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43w-cx-IA7">
                                     <rect key="frame" x="36" y="74" width="80" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

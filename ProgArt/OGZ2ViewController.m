@@ -29,21 +29,66 @@
 {
     [self tap:nil];
     [VibroUtil vibrate];
-    double xknp_pgz = [self.Xknp.text doubleValue];
-    double yknp_pgz = [self.YKnp.text doubleValue];
-    double hknp_pgz = [self.hKnp.text doubleValue];
-    double a_pgz = [self.AKnp.text doubleValue];
-    double d_pgz = [self.Dknp.text doubleValue];
-    double Mz_pgz = [self.Mc.text doubleValue];
+    double xknp_ogz = [self.Xknp.text doubleValue];
+    if (xknp_ogz == 0.0f)
+    {
+        [self errorHandling:self.Xknp];
+        return;
+    }
+    double yknp_ogz = [self.YKnp.text doubleValue];
+    if (yknp_ogz == 0.0f)
+    {
+        [self errorHandling:self.YKnp];
+        return;
+    }
+    double hknp_ogz = [self.hKnp.text doubleValue];
+    if (hknp_ogz == 0.0f)
+    {
+        [self errorHandling:self.hKnp];
+        return;
+    }
+    double xzelu_ogz = [self.Xzelu.text doubleValue];
+    if (hknp_ogz == 0.0f)
+    {
+        [self errorHandling:self.Xzelu];
+        return;
+    }
+    double yzelu_ogz = [self.Yzelu.text doubleValue];
+    if (hknp_ogz == 0.0f)
+    {
+        [self errorHandling:self.Yzelu];
+        return;
+    }
+    double hzelu_ogz = [self.hzelu.text doubleValue];
+    if (hknp_ogz == 0.0f)
+    {
+        [self errorHandling:self.hzelu];
+        return;
+    }
     
     
-    double xn_pgz = xknp_pgz+cos(a_pgz/(30/M_PI))*d_pgz;
-    double yn_pgz = yknp_pgz+sin(a_pgz/(30/M_PI))*d_pgz;
-    double hn_pgz= hknp_pgz+(((d_pgz*Mz_pgz/1000)*1.05)*100);
+    double A_ogz = 0;
+    double dx=xzelu_ogz-xknp_ogz;
+    double dy=yzelu_ogz-yknp_ogz;
     
-    self.labelHResult.text = [NSString stringWithFormat:@"%1.2f",hn_pgz];
-    self.labelXResult.text = [NSString stringWithFormat:@"%1.2f",xn_pgz];
-    self.labelYResult.text = [NSString stringWithFormat:@"%1.2f",yn_pgz];
+    double D_ogz=sqrt(dx*dx+dy*dy);
+    
+    double R= (acos(dx/D_ogz)*9.55);
+    
+    if(dy>0)
+    {
+        A_ogz = R;
+    }
+    else
+    {
+        A_ogz = 60 - R;
+    }
+    float Mz_ogz=(float) (asin((hzelu_ogz-hknp_ogz)/D_ogz)/M_PI*30);
+
+    
+    self.Aknpz.text = [NSString stringWithFormat:@"%1.2f",A_ogz];
+    self.Dknpz.text = [NSString stringWithFormat:@"%1.2f",D_ogz];
+    self.Mz.text = [NSString stringWithFormat:@"%1.2f",Mz_ogz];
     [scrollView scrollRectToVisible:self.decisionView.frame animated:YES];
 }
 
@@ -113,13 +158,14 @@
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
     activeField = textField;
+    textField.backgroundColor = [UIColor whiteColor];
     return YES;
 }
 #pragma mark - Error Handling
 - (void) errorHandling:(UITextField*)textField
 {
     textField.backgroundColor = [UIColor redColor];
-    
+    [scrollView scrollRectToVisible:textField.superview.frame animated:YES];
 }
 
 @end

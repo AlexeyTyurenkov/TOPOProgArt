@@ -7,7 +7,7 @@
 //
 
 #import "PGZ2ViewController.h"
-
+#import "VibroUtil.h"
 
 @interface PGZ2ViewController ()
 {
@@ -28,6 +28,7 @@
 - (IBAction)resolveEquation:(id)sender
 {
     [self tap:nil];
+    [VibroUtil vibrate];
     double xknp_pgz = [self.Xknp.text doubleValue];
     if (xknp_pgz == 0.0f)
     {
@@ -141,6 +142,7 @@
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
     activeField = textField;
+    textField.backgroundColor = [UIColor whiteColor];
     return YES;
 }
 #pragma mark - Error Handling

@@ -14,12 +14,15 @@
 @property (weak, nonatomic) IBOutlet UITextField *Xknp;
 @property (weak, nonatomic) IBOutlet UITextField *YKnp;
 @property (weak, nonatomic) IBOutlet UITextField *hKnp;
-@property (weak, nonatomic) IBOutlet UITextField *AKnp;
-@property (weak, nonatomic) IBOutlet UITextField *Dknp;
-@property (weak, nonatomic) IBOutlet UITextField *Mc;
-@property (weak, nonatomic) IBOutlet UILabel *labelXResult;
-@property (weak, nonatomic) IBOutlet UILabel *labelYResult;
-@property (weak, nonatomic) IBOutlet UILabel *labelHResult;
+@property (weak, nonatomic) IBOutlet UITextField *Xzelu;
+@property (weak, nonatomic) IBOutlet UITextField *Yzelu;
+@property (weak, nonatomic) IBOutlet UITextField *hzelu;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *Aknpz;
+@property (weak, nonatomic) IBOutlet UILabel *Dknpz;
+@property (weak, nonatomic) IBOutlet UILabel *Mz;
+
 - (IBAction)resolveEquation:(id)sender;
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *decisionView;
 
