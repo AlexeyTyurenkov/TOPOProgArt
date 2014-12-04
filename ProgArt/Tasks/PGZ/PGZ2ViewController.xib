@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -43,7 +43,7 @@
                                         <constraint firstAttribute="width" constant="147" id="VqP-d6-IHe"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WjD-Gp-m17">
@@ -58,7 +58,7 @@
                                     </connections>
                                 </textField>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="DG6-mL-ONA" firstAttribute="leading" secondItem="At6-XT-4oq" secondAttribute="leading" constant="17" id="O85-Q2-IU7"/>
                                 <constraint firstAttribute="trailing" secondItem="WjD-Gp-m17" secondAttribute="trailing" constant="31" id="Pne-Dr-7QB"/>
@@ -77,7 +77,7 @@
                                         <constraint firstAttribute="width" constant="147" id="wGs-Kj-VjY"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G4j-Fx-6hZ">
@@ -92,7 +92,7 @@
                                     </connections>
                                 </textField>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="G4j-Fx-6hZ" firstAttribute="top" secondItem="G72-gM-5iP" secondAttribute="top" constant="8" id="13c-aG-s7L"/>
                                 <constraint firstAttribute="trailing" secondItem="G4j-Fx-6hZ" secondAttribute="trailing" constant="31" id="Kwk-LY-ZMB"/>
@@ -111,7 +111,7 @@
                                         <constraint firstAttribute="width" constant="147" id="UYH-ln-hBC"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eB-ao-63u">
@@ -126,7 +126,7 @@
                                     </connections>
                                 </textField>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="4eB-ao-63u" secondAttribute="trailing" constant="31" id="Ofp-Z4-GDi"/>
                                 <constraint firstItem="OhS-cI-JVt" firstAttribute="top" secondItem="Iwc-08-s4w" secondAttribute="top" constant="11" id="PZz-Nw-b8T"/>
@@ -145,7 +145,7 @@
                                         <constraint firstAttribute="width" constant="147" id="zBA-c7-Xih"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45l-fU-zUn">
@@ -160,7 +160,7 @@
                                     </connections>
                                 </textField>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="45l-fU-zUn" firstAttribute="top" secondItem="On6-dd-r3n" secondAttribute="top" constant="8" id="ECc-MP-9bc"/>
                                 <constraint firstAttribute="trailing" secondItem="45l-fU-zUn" secondAttribute="trailing" constant="31" id="Gtl-PX-9dL"/>
@@ -179,7 +179,7 @@
                                         <constraint firstAttribute="width" constant="147" id="wo9-B4-tUm"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WXj-Pi-bUk">
@@ -194,7 +194,7 @@
                                     </connections>
                                 </textField>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="LTc-nI-WMs" firstAttribute="top" secondItem="9wS-LE-chw" secondAttribute="top" constant="11" id="7Zs-IA-WKE"/>
                                 <constraint firstAttribute="height" constant="44" id="BVI-1y-mgY"/>
@@ -213,7 +213,7 @@
                                         <constraint firstAttribute="width" constant="147" id="ImB-57-qpR"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WOH-Vb-71f">
@@ -228,7 +228,7 @@
                                     </connections>
                                 </textField>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="hIC-EZ-blu" firstAttribute="top" secondItem="9xe-Yj-sM1" secondAttribute="top" constant="11" id="9O5-FT-zhL"/>
                                 <constraint firstItem="WOH-Vb-71f" firstAttribute="top" secondItem="9xe-Yj-sM1" secondAttribute="top" constant="8" id="L01-sQ-hz2"/>
@@ -343,6 +343,7 @@
                             </variation>
                         </view>
                     </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <gestureRecognizers/>
                     <constraints>
                         <constraint firstItem="9xe-Yj-sM1" firstAttribute="leading" secondItem="O0K-nb-Zf9" secondAttribute="leading" id="38X-3i-RBY"/>
