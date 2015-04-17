@@ -13,6 +13,9 @@
 #import "PGZ2ViewController.h"
 #import "OGZ2ViewController.h"
 #import "SNViewController.h"
+#import "WGS84SK42ViewController.h"
+
+
 @interface MainTableViewController ()
 {
     NSArray* sections;
@@ -28,6 +31,7 @@
                  [[Task alloc] initTask:@"ПГЗ"                   WithController:[PGZ2ViewController new]],
                  [[Task alloc] initTask:@"ОГЗ"                   WithController:[OGZ2ViewController new]],
                  [[Task alloc] initTask:@"СН"                    WithController:[SNViewController   new]],
+                 [[Task alloc] initTask:@"WGS84<=>СК42" WithController:[WGS84SK42ViewController new]]
 //                 [[Task alloc] initTask:@"BL <=> XY"             WithController:[DUV1000ViewController DUV1000Controller]],
 //                 [[Task alloc] initTask:@"WGS84 <=> CK42"        WithController:[DUV1000ViewController DUV1000Controller]],
 //                 [[Task alloc] initTask:@"WGS84 <=> CK42 по GPS" WithController:[DUV1000ViewController DUV1000Controller]],

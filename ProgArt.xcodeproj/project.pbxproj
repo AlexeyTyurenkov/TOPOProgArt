@@ -28,6 +28,8 @@
 		D9195BAC1A2FA99700EF75BB /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195BAA1A2FA99700EF75BB /* HelpViewController.m */; };
 		D9195BAD1A2FA99700EF75BB /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9195BAB1A2FA99700EF75BB /* HelpViewController.xib */; };
 		D9195BB01A2FAB9D00EF75BB /* VibroUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D9195BAF1A2FAB9D00EF75BB /* VibroUtil.m */; };
+		D9B956D41A3E0B5500B8A1D9 /* WGS84SK42ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B956D21A3E0B5500B8A1D9 /* WGS84SK42ViewController.m */; };
+		D9B956D51A3E0B5500B8A1D9 /* WGS84SK42ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B956D31A3E0B5500B8A1D9 /* WGS84SK42ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,9 @@
 		D9195BAB1A2FA99700EF75BB /* HelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HelpViewController.xib; path = Tasks/HelpViewController.xib; sourceTree = "<group>"; };
 		D9195BAE1A2FAB9D00EF75BB /* VibroUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibroUtil.h; sourceTree = "<group>"; };
 		D9195BAF1A2FAB9D00EF75BB /* VibroUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibroUtil.m; sourceTree = "<group>"; };
+		D9B956D11A3E0B5500B8A1D9 /* WGS84SK42ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WGS84SK42ViewController.h; path = "Tasks/WGS84СК42/WGS84SK42ViewController.h"; sourceTree = "<group>"; };
+		D9B956D21A3E0B5500B8A1D9 /* WGS84SK42ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WGS84SK42ViewController.m; path = "Tasks/WGS84СК42/WGS84SK42ViewController.m"; sourceTree = "<group>"; };
+		D9B956D31A3E0B5500B8A1D9 /* WGS84SK42ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WGS84SK42ViewController.xib; path = "Tasks/WGS84СК42/WGS84SK42ViewController.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +192,7 @@
 		C6DA30231A2CB76400801A4B /* TaskControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D9B956D01A3E0ACE00B8A1D9 /* WGS84СК42  */,
 				C622125B1A2F305A00C47D0C /* SN */,
 				C62212581A2E122800C47D0C /* OGZ */,
 				D9195BA01A2D1B5C00EF75BB /* PGZ2 */,
@@ -217,6 +223,16 @@
 				D9195BA31A2D1B8900EF75BB /* PGZ2ViewController.xib */,
 			);
 			name = PGZ2;
+			sourceTree = "<group>";
+		};
+		D9B956D01A3E0ACE00B8A1D9 /* WGS84СК42  */ = {
+			isa = PBXGroup;
+			children = (
+				D9B956D11A3E0B5500B8A1D9 /* WGS84SK42ViewController.h */,
+				D9B956D21A3E0B5500B8A1D9 /* WGS84SK42ViewController.m */,
+				D9B956D31A3E0B5500B8A1D9 /* WGS84SK42ViewController.xib */,
+			);
+			name = "WGS84СК42 ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B956D51A3E0B5500B8A1D9 /* WGS84SK42ViewController.xib in Resources */,
 				C61DA79C1A2CA15F00BB9210 /* Main.storyboard in Resources */,
 				D9195B8D1A2D043E00EF75BB /* DUV1000ViewController.xib in Resources */,
 				C62212571A2E121800C47D0C /* OGZ2ViewController.xib in Resources */,
@@ -326,6 +343,7 @@
 			files = (
 				C61DA7B81A2CA1D700BB9210 /* MainTableViewController.m in Sources */,
 				C622125F1A2F305A00C47D0C /* SNViewController.m in Sources */,
+				D9B956D41A3E0B5500B8A1D9 /* WGS84SK42ViewController.m in Sources */,
 				C61DA7991A2CA15F00BB9210 /* ViewController.m in Sources */,
 				D9195BA41A2D1B8900EF75BB /* PGZ2ViewController.m in Sources */,
 				C61DA7961A2CA15F00BB9210 /* AppDelegate.m in Sources */,
